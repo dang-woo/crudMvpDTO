@@ -1,0 +1,26 @@
+### 단일 조회
+GET http://localhost:8080/border/1
+Accept: application/json
+
+### 전체 조회
+GET http://localhost:8080/border
+Accept: application/json
+
+### 추가
+POST http://localhost:8080/border
+{
+    "content": "내용입니다",
+    "title": "제목입니다"
+}
+Content-Type: application/json
+### 삭제
+DELETE http://localhost:8080/board/9
+Content-Type: application/json
+
+### 수정
+PUT http://localhost:8080/border/11
+{
+    "content": "사실내용맞음",
+    "title": "사실제목맞음"
+}
+Content-Type: application/json
